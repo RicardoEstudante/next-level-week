@@ -18,12 +18,16 @@ interface Item {
 interface IBGEUFResponse {
     sigla: string;
 }
+interface IBGECityResponse {
+    nome: string;
+}
 
 
 const CreatePoint = () =>{
 
     const [items, setItems] = useState<Item[]>([]);
     const [ufs, setUfs] = useState<string[]>([]);
+    const [cities, setCities] = useState<string[]>([]);
 
     const [selectedUF, setSelectedUf] = useState('0');
 
@@ -42,8 +46,18 @@ const CreatePoint = () =>{
     }, []);
 
     useEffect(() => {
+        if (selectedUF === '0') {
+            return;
+        }
 
-    }, []);
+        axios
+            .get<IBGECityResponse[]>(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${selectedUF}/municipios`)
+            .then(response => {
+                const cityNames = response.data.map(city => city.nome);
+
+                setCities(cityNames);
+            });
+    }, [selectedUF]);
 
     function handleSelectedUF(event: ChangeEvent<HTMLSelectElement>){
         const uf = event.target.value;
@@ -51,7 +65,6 @@ const CreatePoint = () =>{
         setSelectedUf(uf);
     }
     
-
     return (
         <div id="page-create-point">
             <header>
@@ -73,10 +86,10 @@ const CreatePoint = () =>{
 
                     <div className="field">
                         <label htmlFor="name">Nome da entidade</label>
-                        <input 
-                        type="text"
-                        name="name"
-                        id="name"
+                            <input 
+                            type="text"
+                            name="name"
+                            id="name"
                         />
                     </div>
 
@@ -134,6 +147,9 @@ const CreatePoint = () =>{
                             <label htmlFor="city">Cidade</label>
                             <select name="city" id="city">
                                 <option value="0">Selecione uma cidade</option>
+                            {cities.map(city => (
+                                <option key={city} value={city}>{city}</option>
+                            ))}
                             </select>
                         </div>
                     </div>
