@@ -1,7 +1,10 @@
+  <p align="center">
+    <img src="./img/logo.svg">
+  </p>
 
-<h2 align="center"> 
- NextLevelWeek 1.0 🚀 Done!
-</h2>
+  <h2 align="center"> 
+    NextLevelWeek 1.0 🚀 Done!
+  </h2>
 
 ---
 
@@ -21,7 +24,8 @@
   </a>
 </p>
 <p align="center">
-  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -45,6 +49,13 @@ An online and completely free event that will help you take the next step in you
 Ecoleta is a project developed based on international environment week. 
 That aims to connect people to companies that collect specific waste such as light bulbs, batteries, cooking oil, etc.
 
+## 🔖 Layout
+
+<p align="center">
+    <img src="./img/capa.svg">
+</p>
+
+To access the layout use [Figma](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/).
 
 ## :rocket: Technologies
 
@@ -55,10 +66,6 @@ This project was developed with the following technologies:
 - [React][reactjs]
 - [React Native][rn]
 - [Expo][expo]
-
-## 🔖 Layout
-
-To access the layout use [Figma](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/).
 
 ## :information_source: How To Use
 
@@ -73,7 +80,7 @@ From your command line:
 $ git clone https://github.com/RicardoEstudante/next-level-week.git
 
 # Go into the repository
-$ cd NLW-1.0/backend
+$ cd next-level-week/server
 
 # Install dependencies
 $ yarn install
@@ -97,7 +104,7 @@ $ yarn dev
 $ git clone https://github.com/RicardoEstudante/next-level-week.git
 
 # Go into the repository
-$ cd NLW-1.0/frontent
+$ cd next-level-week/web
 
 # Install dependencies
 $ yarn install
@@ -115,7 +122,7 @@ $ yarn start
 $ git clone https://github.com/RicardoEstudante/next-level-week.git
 
 # Go into the repository
-$ cd NLW-1.0/mobile
+$ cd next-level-week/mobile
 
 # Install dependencies
 $ yarn install
@@ -139,7 +146,6 @@ $ expo install expo-font @expo-google-fonts/ubuntu @expo-google-fonts/roboto
 
 After merging your receipt request to done, you can delete a branch from yours.
 
----
 [nodejs]: https://nodejs.org/
 [typescript]: https://www.typescriptlang.org/
 [expo]: https://expo.io/
