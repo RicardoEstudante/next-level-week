@@ -2,10 +2,10 @@
 <h2 align="center"> 
  NextLevelWeek 1.0 🚀 Done!
 </h2>
-<p align="center">	
 
 ---
-  
+
+<p align="center">	
   <a href="https://www.linkedin.com/in/ricardo-carvalho-ba865a123/">
     <img alt="Made by Ricardo" src="https://img.shields.io/badge/made%20by-Ricardo-%2304D361">
   </a>
@@ -13,15 +13,12 @@
   <a aria-label="Completed" href="https://nextlevelweek.com/aulas/booster/1/edicao/1">
     <img src="https://img.shields.io/badge/NLW-done-brightgreen?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAALVBMVEVHcExxWsF0XMJzXMJxWcFsUsD///9jRrzY0u6Xh9Gsn9n39fyMecy0qd2bjNJWBT0WAAAABHRSTlMA2Do606wF2QAAAGlJREFUGJVdj1cWwCAIBLEsRU3uf9xobDH8+GZwUYi8i6ucJwrxKE+7D0G9Q4vlYqtmCSjndr4CgCgzlyFgfKfKCVO0LrPKjmiqMxGXkJwNnXskqWG+1oSM+BSwD8f29YLNjvx/OQrn+g99oQSoNmt3PgAAAABJRU5ErkJggg=="></img>
   </a>
-  
-  
-  </a>
-
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-  
 </p>
+
 <p align="center">
-<a href="https://insomnia.rest/run/?label=NLW%201.0%20-%20Ecoleta&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDanielObara%2FNLW-1.0%2Fmaster%2Fbackend%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+  <a href="https://insomnia.rest/run/?label=NLW%201.0%20-%20Ecoleta&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDanielObara%2FNLW-1.0%2Fmaster%2Fbackend%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia">
+  </a>
 </p>
 <p align="center">
   <a href="#-nlw">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
