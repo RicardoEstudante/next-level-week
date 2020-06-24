@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import {View, StyleSheet, TouchableOpacity, Image, Text} from 'react-native';
-import {Feather as Icon} from "@expo/vector-icons";
+import {View, StyleSheet, TouchableOpacity, Image, Text, SafeAreaView} from 'react-native';
+import {Feather as Icon, FontAwesome} from "@expo/vector-icons";
+import { RectButton } from 'react-native-gesture-handler';
 
 const Detail = () => {
     const navigation = useNavigation();
@@ -11,20 +12,34 @@ const Detail = () => {
     }
 
     return (
-        <View style={styles.container}>
-            <TouchableOpacity onPress={handleNavigateBack}>
-                <Icon name="arrow-left" size={20} color="#34cb79" />
-            </TouchableOpacity>
-            <Image style={styles.pointImage} source={{ uri: "https://images.unsplash.com/photo-1556767576-5ec41e3239ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"}}/>
+        <SafeAreaView style={{ flex: 1 }}>
+            <View style={styles.container}>
+                <TouchableOpacity onPress={handleNavigateBack}>
+                    <Icon name="arrow-left" size={20} color="#34cb79" />
+                </TouchableOpacity>
+                <Image style={styles.pointImage} source={{ uri: "https://images.unsplash.com/photo-1556767576-5ec41e3239ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"}}/>
 
-            <Text style={styles.pointName}>Padocão</Text>
-            <Text style={styles.pointItems}>Resíduos Eletrônicos, Lâmpadas</Text>
+                <Text style={styles.pointName}>Padocão</Text>
+                <Text style={styles.pointItems}>Resíduos Eletrônicos, Lâmpadas</Text>
 
-            <View style={styles.address}>
-                <Text style={styles.addressTitle}>Endereço</Text>
-                <Text style={styles.addressContent}>Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</Text>
+                <View style={styles.address}>
+                    <Text style={styles.addressTitle}>Endereço</Text>
+                    <Text style={styles.addressContent}>Rio do Sul, Santa Catarina Guilherme Gemballa, Jardim América Nº 260</Text>
+                </View>
             </View>
-        </View>
+            <View style={styles.footer}>
+                <RectButton style={styles.button} onPress={() => {}}>
+                    <FontAwesome name="whatsapp" size={20} color="#fff" />
+                    <Text style={styles.buttonText}>Whatsapp</Text>
+                </RectButton>
+
+                <RectButton style={styles.button} onPress={() => {}}>
+                    <Icon name="mail" size={20} color="#fff" />
+                    <Text style={styles.buttonText}>E-Mail</Text>
+                </RectButton>
+
+            </View>
+        </SafeAreaView>
         )
 };
 
@@ -32,7 +47,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 32,
-        paddingTop: 20,
+        paddingTop: 35,//20
     },
 
     pointImage: {
