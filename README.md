@@ -1,5 +1,5 @@
   <p align="center">
-    <img src="./img/logo.svg">
+    <img src="./img/ecoleta.svg">
   </p>
 
   <h2 align="center"> 
