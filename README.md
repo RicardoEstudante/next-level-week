@@ -52,7 +52,7 @@ That aims to connect people to companies that collect specific waste such as lig
 ## 🔖 Layout
 
 <p align="center">
-    <img src="./img/capa.svg">
+    <img src="./img/ecoleta.png">
 </p>
 
 To access the layout use [Figma](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/).
